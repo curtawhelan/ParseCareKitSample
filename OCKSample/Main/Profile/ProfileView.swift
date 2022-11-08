@@ -13,6 +13,7 @@ import CareKit
 import os.log
 
 struct ProfileView: View {
+    @Environment(\.tintColor) private var tintColor
     @StateObject var viewModel = ProfileViewModel()
     @ObservedObject var loginViewModel: LoginViewModel
     @State var firstName = ""
